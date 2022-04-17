@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.a{
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 300px; 
+}
+
+.b{
+  float: left;
+  width: 70%;
+  padding: 10px;
+  height: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+
+  <div class="a" style="background-color:#bbb;">
+
+    <center>
+        <h2>Menu</h2>
+        <ul style="list-style-type: none;">
+        <li><a href="prak.html" target="blank">X.Input Biodata</a></li>
+        <li><a href="cb.html" target="blank">X.Input Pendaftaran</a></li>
+        </ul>  
+    </center>
+  </div>
+
+  <div class="b" style="background-color:white;">
+    <label for= "Nama">Nama:</label><br>
+    <input type="text" name="Nama" value="" size="40px"><br>
+    <label for= "Alamat">Alamat:</label><br>
+    <input type="text" name="Alamat" value="" size="80px"><br>
+    <label for= "Agama">Agama:</label><br>
+    <input type="text" name="Agama" value="" size="40px"><br>
+    <label for= "JenisKelamin">Jenis Kelamin:</label><br>
+    <input type="text" name="JenisKelamin" value="" size="40px" maxlength=" 100 "><br><br>
+    <input type="submit" value="Simpan">
+    <input type="button" value="Batal">
+  </form>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+			.center{text-align: center;}
+		body{
+			border: solid;
+			border-width: thick;
+			width: 100%
+			font-family: Verdana,sans-serif;
+			color: black;
+			background: white;
+		}
+		p{
+			text-indent: 2em;
+			margin-top: 0;
+			margin-bottom: :0;
+		}
+		#par1{text-align: left; color: blue;}
+		#mr{background-color: aqua;}
+		h2{font-size: 150%;}
+		h3{font-size: 100%}
+		h4,h5{text-align: left;color: aqua;font-size: 200%}
+		div{
+			border: solid;
+			border-width: thin;
+			width: 100%;
+		}
+		ul{
+			border: solid;
+			border-color: black;
+			border-width: thin;
+			width: 94.25%
+		}
+		li{color: red;}
+		a:link{color: rgb(0,0,153);}
+		a:visited{color: rgb(153,0,153);}
+		a:active{color: rgb(225,0,102);}
+		a:hover{color: rgb(0,96,225);}

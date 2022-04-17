@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.ats{
+    float: bottom;
+    height:70px;
+    width: 100%;
+    border: 2px solid black;
+}
+.ka{
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 300px; 
+  border: 1px solid black;
+  border-left:2px solid black;
+}
+
+.ki{
+  float: left;
+  width: 70%;
+  padding: 10px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.bwh{
+    float: top;
+    height:70px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+       <div class="ats">
+            <center>
+            <h1>Praktik 3</h1>
+            </center>
+        </div>
+
+  <div class="ka" style="background-color:#bbb;">
+
+    <center>
+        <h2>Menu</h2>
+        <ul style="list-style-type: none;">
+        <li><a href="prak.html" target="blank">X.Input Biodata</a></li>
+        <li><a href="cb.html" target="blank">X.Input Pendaftaran</a></li>
+        </ul>  
+    </center>
+  </div>
+
+  <div class="ki" style="background-color:white;">
+    <label for= "Nama">Nama:</label><br>
+    <input type="text" name="Nama" value="" size="40px"><br>
+    <label for= "Alamat">Alamat:</label><br>
+    <input type="text" name="Alamat" value="" size="50px"><br>
+    <label for= "Telp">Telp:</label><br>
+    <input type="text" name="Telp" value="" size="40px"><br>
+    <p>Jenis kelamin :<input type="radio" name="Jenis Kelamin" value=""><label for= "Laki-Laki">Laki-Laki</label><input type="radio" name="Jenis Kelamin" value=""><label for= "Perempuan">Perempuan</label></p>
+    <label for="Agama">Agama:</label>
+    <select name="Agama" id="Agama">
+      <option value="void"></option>
+      <option value="Islam">Islam</option>
+      <option value="Budha">Budha</option>
+      <option value="Hindu">Hindu</option>
+      <option value="Kristen">Kristen</option>
+      <option value="other">Tidak ingin disebutkan</option>
+    </select>
+      <br>
+      <label for= "Prestasi">Prestasi yang pernah diraih :</label>
+      <textarea id="Prestasi" name="Prestasi" rows="3" cols="50">
+      </textarea><br>
+    <input type="submit" value="Simpan">
+    <input type="reset" value="Batal">
+  </form>
+  </div>
+</div>
+    
+        <div class="bwh">
+            <center>
+            <h1>eko &copy; 210018142</h1>
+            </center>
+        </div>
+</body>
+</html>
