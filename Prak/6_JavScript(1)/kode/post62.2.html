@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Memasukkan bilangan
+	</title>
+</head>
+<body>
+<P>
+	<script language="javascript">
+		function jumlah(){
+			var bil1 = parseFloat(document.ffrom.bilangan1.value)
+			if (isNaN (bil1)) bil1 = 0.0;
+			var bil2 = parseFloat(document.ffrom.bilangan2.value)
+			if (isNaN (bil2)) bil2 = 0.0;
+			var hasil = bil1 + bil2;
+			alert ("Hasil penjumlahan = "+hasil);
+		}
+		function kurang(){
+			var bil1 = parseFloat(document.ffrom.bilangan1.value)
+			if (isNaN (bil1)) bil1 = 0.0;
+			var bil2 = parseFloat(document.ffrom.bilangan2.value)
+			if (isNaN (bil2)) bil2 = 0.0;
+			var hasil = bil1 - bil2;
+			alert ("Hasil pengurangan = "+hasil);
+		}
+		function kali(){
+			var bil1 = parseFloat(document.ffrom.bilangan1.value)
+			if (isNaN (bil1)) bil1 = 0.0;
+			var bil2 = parseFloat(document.ffrom.bilangan2.value)
+			if (isNaN (bil2)) bil2 = 0.0;
+			var hasil = bil1 * bil2;
+			alert ("Hasil perkalian = "+hasil);
+		}
+		function bagi(){
+			var bil1 = parseFloat(document.ffrom.bilangan1.value)
+			if (isNaN (bil1)) bil1 = 0.0;
+			var bil2 = parseFloat(document.ffrom.bilangan2.value)
+			if (isNaN (bil2)) bil2 = 0.0;
+			var hasil = bil1 / bil2;
+			alert ("Hasil pembagian = "+hasil);
+		}
+	</script>
+	<form name="ffrom">
+		<h1><br>Memasukkan data lewat keyboard</h1>
+		<pre>
+	Bilangan Pertama : <input type="text" size="11" name="bilangan1"> 
+	Bilangan Kedua   : <input type="text" size="11" name="bilangan2">
+	Pilih Operasi	 : <input type="button" value="+" onclick="jumlah()"><input type="button" value="-" onclick="kurang()"><input type="button" value="x" onclick="kali()"><input type="button" value=":" onclick="bagi()">
+	<input type="reset" value = "Clear">
+		</pre>
+		</P>
+	</form>
+</body>
+</html>
