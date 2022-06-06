@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<script>
+function find()
+{
+var a,b,c,d
+c=" "
+d=" "
+a=document.frm.t1.value
+b=document.frm.t2.value
+if(document.frm.r[0].checked)
+c="male"
+else if(document.frm.r[1].checked)
+c="female"
+if(document.frm.c1.checked)
+d="cricket" 
+if(document.frm.c2.checked)
+d="football" 
+document.frm.t3.value="Halo"+a + " " + b + " " + c + " " + d
+}
+</script>
+<form name="frm">
+Name
+<input type="text" name="t1">
+<br>Password
+<input type="password" name="t2">
+<br>Male
+<input type="radio" name="r">
+Female
+<input type="radio" name="r">
+<br>Cricket
+<input type="checkbox" name="c1">
+Football
+<input type="checkbox" name="c2">
+<br>
+<textarea rows="6" cols="14" name="t3">
+</textarea>
+<br><input type="button" value="click" onClick="find()">
+</form>

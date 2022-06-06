@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Post 7c
+	</title>
+</head>
+<body>
+	<script language="javascript">
+		function warna(pilihan){
+			alert("Anda memilih warna "+pilihan);
+			document.bgColor=pilihan;
+		}
+		function oc(){
+			var och=document.getElementById("event").value;
+			alert("Anda memilih warna "+och);
+			document.bgColor=och;
+		}
+		function zoom(x){
+ 		 x.style.height = "148px";
+		 x.style.width = "148px";
+		}
+		function normal(x) {
+ 		x.style.height = "61px";
+  		x.style.width = "72px";
+		}
+		function ofc(x) {
+  		x.style.background = "black";
+  		x.style.color = "white";
+		}
+	</script>
+	<h1 align="center">Latihan event</h1>
+	<hr width="500" color= "black" noshade="">
+	<h3 align="center">Pilih warna background favorit anda</h3>
+	<center>
+		Nama: <input type="text" onfocus="ofc(this)"><br>
+		NIM : <input type="text" onfocus="ofc(this)"><br></br>
+		<form>
+			<input type="button" value="biru" onclick="warna('lightblue')">
+			<input type="button" value="pink" onclick="warna('pink')">
+			<input type="button" value="coklat" onclick="warna('burlywood')">
+			<input type="button" value="kelabu" onclick="warna('darkgray')">
+			<input type="button" value="oranye" onclick="warna('peachpuff')">
+			<input type="button" value="putih" onclick="warna('white')">
+		</form>
+		<!-- Onchange-->
+		<select id="event" onchange="oc()">
+			<option value="white">Pilih
+			<option value="lightblue">Biru
+			<option value="pink">pink
+			<option value="burlywood">coklat
+			<option value="darkgray">kelabu
+			<option value="peachpuff">oranye
+			<option value="white">putih
+		</select>
+		<form>
+			<img onmouseover="zoom(this)" onmouseout="normal(this)" src="p.gif" width="61" height="72"><br><br>
+			<input type="button" value=" Off " onclick="coolfan.src='p.gif' ">
+			<input type="button" value=" On " onclick="coolfan.src='p.gif' ">
+		</form>
+	</center>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Latihan percabangan Java Script
+	</title>
+</head>
+<body>
+	<script language="javascript">
+		function hsl(){
+			var nama,nim,kelas,gender,fakultas;
+			nama=(document.ffrm.inama.value);
+			nim=(document.ffrm.inim.value);
+			kelas=(document.ffrm.ikls.value);
+			if(document.ffrm.jk1.checked){
+				gender="ganteng";
+			}
+			else{
+				gender="cantik";
+			}
+			if(document.ffrm.FTI.checked){
+				fakultas="Fakultas Teknologi Industri";
+			}
+			else if(document.ffrm.HUKUM.checked){
+				fakultas="Fakultas Hukum";
+			}
+			else if(document.ffrm.SBK.checked){
+				fakultas="Fakultas Sastra, Budaya, dan Komunikasi";
+			}
+			else if(document.ffrm.FAST.checked){
+				fakultas="Fakultas Sains dan Teknologi Terapan";
+			}
+			document.ffrm.area.value="Halo "+nama + " yang " + gender + " nim " + nim + " dari kelas " + kelas + " " + fakultas;
+		}
+	</script>
+	<form name="ffrm">
+		<table border="1" align="center" width="70%">
+			<tr>
+				<td width="100%" colspan="2"><h2 align="=center"><center>Biodata Mahasiswa</h2></center></td>
+			</tr>
+			<tr>
+			<td width="50%"><pre>
+			Nama	: <input type="text" size="20" name="inama">
+			NIM	: <input type="text" size="20" name="inim">
+			Kelas	: <input type="text" size="20" name="ikls">
+			Jenis kelamin: <input type="radio" name="jk1">Pria
+  				       <input type="radio" name="jk">Perempuan
+			Fakultas       :  <input type="checkbox"name="FTI"> FTI</label>
+  					  <input type="checkbox" name="FAST"> FAST
+  					  <input type="checkbox" name="HUKUM"> HUKUM
+  					  <input type="checkbox" name="SBK"> SBK
+			</pre>
+			<td width="50%"><pre>
+			<textarea rows="10" cols="30" name="area"></textarea>
+			</td> 
+			</pre>
+			</tr>
+			<tr>
+				<td width="100%" colspan="2">
+				<center>
+				<input type="button" value="Hasil" onClick="hsl()">
+				<input type="reset" value="Ulang">
+				</center>
+			</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
